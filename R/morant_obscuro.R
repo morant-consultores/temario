@@ -1,23 +1,3 @@
-# library(ggplot2)
-# library(tidyverse)
-#
-#
-#
-# data <- data.frame(
-#   name=c("A","B","C","D","E") ,
-#   value=c(3,12,5,18,45)
-# )
-#
-# colores <- tibble::deframe(temario::colores[["morant"]])
-#
-# library(showtext)
-# showtext_auto()
-#
-# ggplot(data, aes(x=name, y=value)) +
-#   geom_bar(stat = "identity", fill = "#FFFFFF", width =.6)+
-#   theme_foundation(base_size = base_size,
-#                     base_family = base_family)+
-#   theme_morant_obscuro()
 
 #' Tema con la paleta de colores institucionales en una versión obscura
 #'
@@ -29,7 +9,7 @@
 #' @export
 #'
 #' @examples
-theme_morant_obscuro <- function(base_size = 12, base_family = "Poppins",
+theme_morant_obscuro <- function(base_size = 12, base_family = "Futura",
                                  fondo="#4F0212") {
 
   colores <- tibble::deframe(temario::colores[["morant"]])
