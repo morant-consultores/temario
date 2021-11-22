@@ -1,9 +1,14 @@
-#' Tema inspirado en nuestros colores institucionales
+
+#' Tema con la paleta de colores institucionales en una versión obscura
 #'
-#' @inheritParams ggplot2::theme_grey
-#' @family temas morant
+#' @param base_size tamaño de letra base
+#' @param base_family familia tipográfica
+#' @param fondo color del fondo del plot
+#'
+#' @return
 #' @export
-#' @importFrom ggthemes theme_foundation
+#'
+#' @examples
 theme_morant <- function(base_size = 12, base_family = "Futura", fondo="#F7F9EC") {
   colores <- tibble::deframe(temario::colores[["morant"]])
   (theme_foundation(base_size = base_size,
